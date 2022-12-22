@@ -1,6 +1,5 @@
-"use client";
-
-import Link from "next/link";
+import cocoa from "../../img/cocoa.jpg";
+import Image from "next/image";
 
 async function getData() {
   const res = await fetch("https://catfact.ninja/fact");
@@ -11,10 +10,12 @@ async function getData() {
 
 export default async function Page() {
   const data = await getData();
+
   return (
-    <>
-      <div>first</div>
-      <p>{data?.fact}</p>
-    </>
+    <div>
+      <h2>first</h2>
+      <p>{data.fact}</p>
+      <Image src={cocoa} alt="cocoa" width={300} height={300} />
+    </div>
   );
 }
