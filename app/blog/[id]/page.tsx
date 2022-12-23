@@ -1,3 +1,6 @@
+// https://beta.nextjs.org/docs/api-reference/segment-config
+// This option replaces the fallback: true | false | blocking option of getStaticPaths in the pages directory.
+// When dynamicParams = true, the segment uses Streaming Server Rendering.
 export const dynamicParams = true;
 
 export async function generateStaticParams() {

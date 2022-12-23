@@ -18,7 +18,7 @@ export default function Layout({ children }) {
           <Link href="/second" prefetch={false}>
             /second
           </Link>
-          <Link href="/noPage">/third</Link>
+          <Link href="/noPage">/noPage</Link>
           <Link href="/client">/client</Link>
         </div>
         <div className={styles.children}>{children}</div>
