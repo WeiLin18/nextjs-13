@@ -10,11 +10,12 @@ async function getData() {
 
 export default async function Page() {
   const data = await getData();
+  console.log("🚀 ~ file: page.js:13 ~ Page ~ data", data);
 
   return (
     <div>
       <h2>first</h2>
-      <p>{data.fact}</p>
+      <p>{data.fact.replace("cat", "dog")}</p>
       <Image src={cocoa} alt="cocoa" width={300} height={300} />
     </div>
   );
